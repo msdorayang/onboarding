@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: "Reddit Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #083d77;
+    background-color: bisque;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+li {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: start;
+}
+.layoutGrid {
+    display: grid;
+    padding: 2rem 8rem 2rem 8rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 4%;
+    grid-template-areas:
+    "title title"
+    "main sidebar"
+    "footer footer"
+}
+
+.title {
+    grid-area: title;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+.box {
+
+}
+
+.collapse {
+    background-color:salmon;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.collapse:hover {
+    background-color: #ffb19a;
+}
+
+.checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}

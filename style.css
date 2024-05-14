@@ -28,7 +28,18 @@ li {
     margin-bottom: 1rem;
     display: grid;
     grid-template-columns: 2rem auto;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.checkbox {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: stretch;
+}
+
+span {
+    margin-top: 0.5rem;
 }
 .layoutGrid {
     display: grid;
@@ -84,9 +95,14 @@ li {
     background-color: #ffb19a;
 }
 
-.checkbox {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: stretch;
+.noCollapse {
+    background-color:salmon;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
 }

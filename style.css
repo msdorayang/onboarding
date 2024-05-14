@@ -21,13 +21,14 @@ ul {
     list-style: none;
     margin: 0;
     padding: 1rem;
+    display: block;
 }
 
 li {
     margin-bottom: 1rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2rem auto;
     gap: 0.5rem;
-    align-items: start;
 }
 .layoutGrid {
     display: grid;
@@ -62,9 +63,8 @@ li {
 
 }
 
-.insideBox {
+.hideBox {
     display: none;
-    overflow: hidden;
 }
 
 .collapse {
@@ -85,6 +85,8 @@ li {
 }
 
 .checkbox {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: stretch;
 }
